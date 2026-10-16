@@ -1,0 +1,15 @@
+name = "zhost"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+# KV namespace for bot configs and tokens
+# 1. Run: npx wrangler kv namespace create BOTS
+# 2. Copy the id printed by wrangler and paste below
+[[kv_namespaces]]
+binding = "BOTS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Optional: preview namespace for local dev
+# [[kv_namespaces]]
+# binding = "BOTS"
+# preview_id = "REPLACE_WITH_PREVIEW_ID"
