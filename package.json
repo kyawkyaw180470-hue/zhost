@@ -1,0 +1,18 @@
+{
+  "name": "zhost",
+  "version": "1.0.0",
+  "description": "Free Telegram bot hosting on Cloudflare Workers",
+  "private": true,
+  "author": "Zaw Myo Naing",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "kv:create": "wrangler kv namespace create BOTS",
+    "kv:list": "wrangler kv namespace list"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}
